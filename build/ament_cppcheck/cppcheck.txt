@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp':
- - /opt/ros/jazzy/bin/ament_cppcheck --xunit-file /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/cppcheck.xunit.xml --include_dirs /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include
-
-cppcheck 2.13.0 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/cppcheck.xunit.xml'

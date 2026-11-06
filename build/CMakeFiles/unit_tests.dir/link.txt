@@ -1,1 +1,0 @@
-/usr/bin/c++ -O2 -g -DNDEBUG CMakeFiles/unit_tests.dir/test/test_kinematics.cpp.o CMakeFiles/unit_tests.dir/test/test_path_metrics.cpp.o -o unit_tests  librobot_ik_pickplace_cpp_core.a /usr/lib/libCatch2Main.a /usr/lib/libCatch2.a 

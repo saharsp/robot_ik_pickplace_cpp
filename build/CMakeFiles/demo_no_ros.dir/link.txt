@@ -1,1 +1,0 @@
-/usr/bin/c++ -O2 -g -DNDEBUG CMakeFiles/demo_no_ros.dir/standalone/demo_no_ros.cpp.o -o demo_no_ros  librobot_ik_pickplace_cpp_core.a 

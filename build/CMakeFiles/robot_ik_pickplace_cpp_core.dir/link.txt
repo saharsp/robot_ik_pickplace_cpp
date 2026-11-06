@@ -1,2 +1,0 @@
-/usr/bin/ar qc librobot_ik_pickplace_cpp_core.a CMakeFiles/robot_ik_pickplace_cpp_core.dir/src/kinematics.cpp.o CMakeFiles/robot_ik_pickplace_cpp_core.dir/src/path_metrics.cpp.o
-/usr/bin/ranlib librobot_ik_pickplace_cpp_core.a

@@ -1,4 +1,0 @@
-source;share/robot_ik_pickplace_cpp/local_setup.bash
-source;share/robot_ik_pickplace_cpp/local_setup.dsv
-source;share/robot_ik_pickplace_cpp/local_setup.sh
-source;share/robot_ik_pickplace_cpp/local_setup.zsh

@@ -1,5 +1,0 @@
-if(EXISTS "/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/unit_tests_tests-b12d07c.cmake")
-  include("/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/unit_tests_tests-b12d07c.cmake")
-else()
-  add_test(unit_tests_NOT_BUILT-b12d07c unit_tests_NOT_BUILT-b12d07c)
-endif()

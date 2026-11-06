@@ -1,0 +1,9 @@
+build/
+install/
+log/
+*.o
+*.a
+*.so
+ik_demo_result.dat
+ik_demo_plot.gnuplot
+ik_demo_result.png
