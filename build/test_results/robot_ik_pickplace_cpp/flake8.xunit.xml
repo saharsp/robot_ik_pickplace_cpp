@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_ik_pickplace_cpp.flake8"
+  tests="19"
+  errors="0"
+  failures="19"
+  time="0.119"
+>
+  <testcase
+    name="D400 (./launch/ik_demo.launch.py:1:1)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message="First line should end with a period:&#10;&quot;&quot;&quot;&#10;ik_demo.launch.py&#10;&#10;Starts:&#10;  - robot_state_publisher (reads the URDF, broadcasts TF from joint_states)&#10;  - ik_node (from-scratch C++ IK solver, publishes joint_states)&#10;  - rviz2 (visualize the arm)&#10;&#10;ROS2 launch files are themselves Python regardless of whether the nodes&#10;they start are Python or C++ executables -- that doesn't change here. This&#10;is the same launch file as robot_ik_pickplace/launch/ik_demo.launch.py,&#10;pointed at the C++ package's executables instead.&#10;&#10;Run with:&#10;    ros2 launch robot_ik_pickplace_cpp ik_demo.launch.py&#10;&#10;Then, in a second terminal:&#10;    ros2 run robot_ik_pickplace_cpp pick_place_demo&#10;&quot;&quot;&quot;&#10;"/>
+  </testcase>
+  <testcase
+    name="I201 (./launch/ik_demo.launch.py:22:1)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message="Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.:&#10;from ament_index_python.packages import get_package_share_directory&#10;"/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:28:45)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;    pkg_share = get_package_share_directory("robot_ik_pickplace_cpp")&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:29:41)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;    urdf_path = os.path.join(pkg_share, "urdf", "six_axis_arm.urdf")&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:29:49)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;    urdf_path = os.path.join(pkg_share, "urdf", "six_axis_arm.urdf")&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:31:26)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;    with open(urdf_path, "r") as f:&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:36:21)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            package="robot_state_publisher",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:37:24)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            executable="robot_state_publisher",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:38:18)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            name="robot_state_publisher",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:39:20)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            output="screen",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:40:26)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            parameters=[{"robot_description": robot_description}],&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:43:21)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            package="robot_ik_pickplace_cpp",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:44:24)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            executable="ik_node",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:45:18)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            name="ik_node",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:46:20)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            output="screen",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:49:21)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            package="rviz2",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:50:24)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            executable="rviz2",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:51:18)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            name="rviz2",&#10;'/>
+  </testcase>
+  <testcase
+    name="Q000 (./launch/ik_demo.launch.py:52:20)"
+    classname="robot_ik_pickplace_cpp.flake8"
+  >
+      <failure message='Double quotes found but single quotes preferred:&#10;            output="screen",&#10;'/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/ik_demo.launch.py</system-out>
+</testsuite>

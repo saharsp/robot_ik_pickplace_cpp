@@ -1,0 +1,116 @@
+-- run_test.py: invoking following command in '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp':
+ - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/flake8.xunit.xml
+
+"""
+ik_demo.launch.py
+
+Starts:
+  - robot_state_publisher (reads the URDF, broadcasts TF from joint_states)
+  - ik_node (from-scratch C++ IK solver, publishes joint_states)
+  - rviz2 (visualize the arm)
+
+ROS2 launch files are themselves Python regardless of whether the nodes
+they start are Python or C++ executables -- that doesn't change here. This
+is the same launch file as robot_ik_pickplace/launch/ik_demo.launch.py,
+pointed at the C++ package's executables instead.
+
+Run with:
+    ros2 launch robot_ik_pickplace_cpp ik_demo.launch.py
+
+Then, in a second terminal:
+    ros2 run robot_ik_pickplace_cpp pick_place_demo
+"""
+^
+from ament_index_python.packages import get_package_share_directory
+^
+    pkg_share = get_package_share_directory("robot_ik_pickplace_cpp")
+                                            ^
+    urdf_path = os.path.join(pkg_share, "urdf", "six_axis_arm.urdf")
+                                        ^
+    urdf_path = os.path.join(pkg_share, "urdf", "six_axis_arm.urdf")
+                                                ^
+    with open(urdf_path, "r") as f:
+                         ^
+            package="robot_state_publisher",
+                    ^
+            executable="robot_state_publisher",
+                       ^
+            name="robot_state_publisher",
+                 ^
+            output="screen",
+                   ^
+            parameters=[{"robot_description": robot_description}],
+                         ^
+            package="robot_ik_pickplace_cpp",
+                    ^
+            executable="ik_node",
+                       ^
+            name="ik_node",
+                 ^
+            output="screen",
+                   ^
+            package="rviz2",
+                    ^
+            executable="rviz2",
+                       ^
+            name="rviz2",
+                 ^
+            output="screen",
+                   ^
+1     D400 First line should end with a period
+1     I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+17    Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:1:1: D400 First line should end with a period
+
+./launch/ik_demo.launch.py:22:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+
+./launch/ik_demo.launch.py:28:45: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:29:41: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:29:49: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:31:26: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:36:21: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:37:24: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:38:18: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:39:20: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:40:26: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:43:21: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:44:24: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:45:18: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:46:20: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:49:21: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:50:24: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:51:18: Q000 Double quotes found but single quotes preferred
+
+./launch/ik_demo.launch.py:52:20: Q000 Double quotes found but single quotes preferred
+
+
+1 files checked
+19 errors
+
+'D'-type errors: 1
+'I'-type errors: 1
+'Q'-type errors: 17
+
+Checked files:
+
+* ./launch/ik_demo.launch.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/flake8.xunit.xml'

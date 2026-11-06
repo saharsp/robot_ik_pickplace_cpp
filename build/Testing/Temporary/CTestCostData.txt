@@ -1,0 +1,26 @@
+forward kinematics at the home position is deterministic 1 0.00389707
+forward kinematics output is a valid homogeneous transform 1 0.00243005
+inverse kinematics converges for a reachable target 1 0.00223356
+inverse kinematics round-trip matches forward kinematics 1 0.00265852
+limit clipping does not corrupt a converged solution (regression) 1 0.00320766
+geometric Jacobian has the expected shape 1 0.00256895
+path_length of an empty list is zero 1 0.00224706
+path_length of a single waypoint is zero 1 0.00318153
+path_length of two waypoints matches Euclidean distance 1 0.00316248
+path_length sums consecutive segments, not endpoint to endpoint 1 0.00240628
+path_length matches the real pick_place_demo waypoints 1 0.00239446
+path_length is order dependent 1 0.00245491
+copyright 0 0
+cppcheck 1 0.141188
+cpplint 0 0
+flake8 0 0
+lint_cmake 1 0.125087
+pep257 0 0
+uncrustify 0 0
+xmllint 1 0.742942
+---
+copyright
+cpplint
+flake8
+pep257
+uncrustify

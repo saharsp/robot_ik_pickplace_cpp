@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_ik_pickplace_cpp.cpplint"
+  tests="12"
+  failures="12"
+  errors="0"
+  time="0.118"
+>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="build/include_order [4] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp:25)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message="Found C system header after C++ system header. Should be: demo_no_ros.h, c system, c++ system, other."/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="build/include_order [4] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp:20)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message="Found C system header after C++ system header. Should be: kinematics.h, c system, c++ system, other."/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/path_metrics.hpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="build/include_order [4] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp:28)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message="Found C system header after C++ system header. Should be: ik_node.h, c system, c++ system, other."/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/kinematics.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/path_metrics.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/pick_place_demo.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_kinematics.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <testcase
+    name="legal/copyright [5] (/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_path_metrics.cpp:0)"
+    classname="robot_ik_pickplace_cpp.cpplint"
+  >
+      <failure message='No copyright message found.  You should have a line: "Copyright [year] &lt;Copyright Owner&gt;"'/>
+  </testcase>
+  <system-out>Checked files:
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/path_metrics.hpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/kinematics.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/path_metrics.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/pick_place_demo.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_kinematics.cpp
+* /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_path_metrics.cpp</system-out>
+</testsuite>

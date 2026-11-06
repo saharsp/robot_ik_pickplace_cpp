@@ -1,0 +1,48 @@
+-- run_test.py: invoking following command in '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp':
+ - /opt/ros/jazzy/bin/ament_cpplint --xunit-file /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/cpplint.xunit.xml
+
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp:25:  Found C system header after C++ system header. Should be: demo_no_ros.h, c system, c++ system, other.  [build/include_order] [4]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp:20:  Found C system header after C++ system header. Should be: kinematics.h, c system, c++ system, other.  [build/include_order] [4]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/path_metrics.hpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp:28:  Found C system header after C++ system header. Should be: ik_node.h, c system, c++ system, other.  [build/include_order] [4]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/kinematics.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/path_metrics.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/pick_place_demo.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_kinematics.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_path_metrics.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+Category 'build/include_order' errors found: 3
+Category 'legal/copyright' errors found: 9
+Total errors found: 12
+Using '--root=/home/sahar/ros2_ws/src' argument
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/standalone/demo_no_ros.cpp
+
+Using '--root=/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include' argument
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/kinematics.hpp
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/include/robot_ik_pickplace_cpp/path_metrics.hpp
+
+Using '--root=/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src' argument
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/ik_node.cpp
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/kinematics.cpp
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/path_metrics.cpp
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/src/pick_place_demo.cpp
+
+Using '--root=/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test' argument
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_kinematics.cpp
+
+Done processing /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/test/test_path_metrics.cpp
+
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/cpplint.xunit.xml'

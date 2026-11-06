@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="robot_ik_pickplace_cpp.pep257"
+  tests="2"
+  errors="0"
+  failures="2"
+  time="0.024"
+>
+  <testcase
+    name="D400 (./launch/ik_demo.launch.py:1)"
+    classname="robot_ik_pickplace_cpp.pep257"
+  >
+      <failure message="D400: First line should end with a period (not 'y')"/>
+  </testcase>
+  <testcase
+    name="D415 (./launch/ik_demo.launch.py:1)"
+    classname="robot_ik_pickplace_cpp.pep257"
+  >
+      <failure message="D415: First line should end with a period, question mark, or exclamation point (not 'y')"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/ik_demo.launch.py</system-out>
+</testsuite>

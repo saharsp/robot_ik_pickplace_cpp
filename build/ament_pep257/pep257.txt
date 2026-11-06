@@ -1,0 +1,11 @@
+-- run_test.py: invoking following command in '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp':
+ - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/pep257.xunit.xml
+
+./launch/ik_demo.launch.py:1 at module level: D400: First line should end with a period (not 'y')
+./launch/ik_demo.launch.py:1 at module level: D415: First line should end with a period, question mark, or exclamation point (not 'y')
+2 errors
+checking ./launch/ik_demo.launch.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/sahar/ros2_ws/src/robot_ik_pickplace_cpp/build/test_results/robot_ik_pickplace_cpp/pep257.xunit.xml'
