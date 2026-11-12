@@ -91,17 +91,6 @@ identical to the Python version's demo, just driven by the C++ node.
 
 ## What was and wasn't verified in this environment
 
-This environment has a C++ toolchain, Eigen3, Catch2, and gnuplot, but no
-ROS2 install. That split in what's checkable maps directly onto the two
-halves of the `CMakeLists.txt`:
-
-**Built, run, and cross-checked numerically against the Python original:**
-`kinematics.cpp`/`.hpp`, `path_metrics.cpp`/`.hpp`, `demo_no_ros.cpp`, and
-both Catch2 test executables. All 12 test cases pass (`ctest`), compile
-clean under `-Wall -Wextra`, and `demo_no_ros`'s output — home pose, IK
-iteration counts (8 and 11), and solved joint angles — matches the Python
-`demo_no_ros.py` run side by side to the digits printed.
-
 **Written but NOT build-verified here (no ROS2 in this environment):**
 `ik_node.cpp` and `pick_place_demo.cpp`. They're written against the
 standard `rclcpp`/`sensor_msgs`/`geometry_msgs`/`visualization_msgs` C++
