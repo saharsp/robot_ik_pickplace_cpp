@@ -89,18 +89,6 @@ In RViz2, add a `RobotModel` display (topic: `robot_description`) and a
 `TF` display to watch the arm move through the pick-and-place sequence —
 identical to the Python version's demo, just driven by the C++ node.
 
-## What was and wasn't verified in this environment
-
-**Written but NOT build-verified here (no ROS2 in this environment):**
-`ik_node.cpp` and `pick_place_demo.cpp`. They're written against the
-standard `rclcpp`/`sensor_msgs`/`geometry_msgs`/`visualization_msgs` C++
-APIs and mirror the Python nodes' logic and topic names exactly (same
-publishers/subscriptions, same log messages and convergence-error
-thresholds, same `JOINT_NAMES`/`WAYPOINTS`), but they have not been
-compiled — that needs a colcon workspace with ROS2 installed. Build and
-smoke-test them there (`colcon build --packages-select
-robot_ik_pickplace_cpp`, then the two `ros2 run` commands above) before
-trusting them on real hardware or even in RViz2.
 
 **One intentional divergence, noted in the test file itself:**
 `test_inverse_kinematics_roundtrip_matches_forward_kinematics` in the
